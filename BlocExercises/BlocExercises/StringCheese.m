@@ -22,6 +22,10 @@
 - (NSString *) cheeseNameWithoutCheeseSuffix:(NSString *)cheeseName {
     
     NSRange cheeseRange = [cheeseName rangeOfString:@" cheese" options: NSCaseInsensitiveSearch];
+    
+    //if ( cheeseRange.location != NSNotFound )
+    // != comparator seems to negate NSNotFound
+    
     if ( cheeseRange.location == NSNotFound ) {
     
         return cheeseName;
