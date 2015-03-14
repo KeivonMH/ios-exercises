@@ -17,13 +17,13 @@
     if (dollars <=4) {
         return @"get out of my store";
     }
-    else if (dollars == 5){
+    else if (dollars <= 5){
         [itemToReturn appendString: @"have some gum"];
     }
-    else if (dollars == 6){
+    else if (dollars <= 6){
         [itemToReturn appendString: @"have an apple"];
     }
-    else if (dollars == 1000){
+    else if (dollars <= 1000){
         [itemToReturn appendString: @"have an Apple computer"];
     }
     else if (dollars > 1000){
@@ -40,9 +40,13 @@
     
     NSUInteger cost = 24;
     
-    if (self.getsDiscount) {
-        cost *= .75;
-    }
+    
+    //if (self.getsDiscount) {
+        //cost *= .75;
+    
+    //NSString *message = ( dollarCostForAppleFlavoredVodka > cost) ? @"Discounted vodka should be $18." : @"Undiscounted vodka should be $24.";
+    
+    cost = self.getsDiscount ? cost * .75 : cost;
     
     return cost;
 }
