@@ -12,11 +12,27 @@
 
 - (NSNumber *) numberThatIsTwiceAsBigAsNumber:(NSNumber *)number {
     /* WORK HERE */
-    return @0;
+    
+    NSNumber *doubledNumber = [NSNumber numberWithDouble:5];
+    
+    double value = [number doubleValue];
+    
+    doubledNumber = [NSNumber numberWithDouble:value * 2];
+    
+    return doubledNumber;
 }
 
 - (NSArray *) arrayOfNumbersBetweenNumber:(NSInteger)number andOtherNumber: (NSInteger)otherNumber {
     /* WORK HERE */
+    
+    //NSInteger *arrayOfNumbers [otherNumber - number];
+    
+    NSMutableArray *temporaryArray = [NSMutableArray arrayWithCapacity:(otherNumber - number)];
+    
+    for (NSInteger i=0; i < otherNumber - number; i++) {
+        [temporaryArray addObject:([temporaryArray objectAtIndex:i])];
+    }
+    
     return @[];
 }
 
