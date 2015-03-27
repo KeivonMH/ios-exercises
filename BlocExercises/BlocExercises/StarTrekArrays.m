@@ -39,16 +39,11 @@
     
     NSMutableArray *characterMutableArray = [NSMutableArray arrayWithArray:characterArray];
     
-    NSPredicate *containsWorf = [NSPredicate predicateWithFormat:@"SELF MATCHES[c] 'Worf'"];
+    NSPredicate *containsWorf = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] 'Worf'"];
     [characterMutableArray filterUsingPredicate:containsWorf];
     
-    if (characterMutableArray.count > 0) {
-        return YES;
-    }
-    
-    else
-        
-    return NO;
+    return (characterMutableArray.count > 0);
+       
 }
 
 @end
