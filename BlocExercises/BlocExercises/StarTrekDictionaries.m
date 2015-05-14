@@ -11,7 +11,6 @@
 @implementation StarTrekDictionaries
 
 - (NSString *)favoriteDrinkForStarTrekCharacterDictionary:(NSDictionary *)characterDictionary {
-    /* WORK HERE */
     
     NSString *drinkString = [characterDictionary objectForKey: @"favorite drink"];
     
@@ -19,7 +18,6 @@
 }
 
 - (NSArray *)arrayOfFavoriteDrinksForStarTrekCharacters:(NSArray *)charactersArray {
-    /* WORK HERE */
     
     
     return [charactersArray valueForKey:@"favorite drink"];
