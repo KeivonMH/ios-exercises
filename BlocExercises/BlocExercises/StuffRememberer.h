@@ -76,6 +76,6 @@
  @return The remembered float, or @c NSNotFound if none was provided.
  */
 - (CGFloat) floatYouShouldRemember;
-@property (nonatomic, assign) CGFloat *floatToRemember;
+@property (atomic, assign) CGFloat floatToRemember;
 
 @end

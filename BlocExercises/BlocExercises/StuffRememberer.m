@@ -24,7 +24,7 @@
 
 - (void) rememberThisFloatForLater:(CGFloat)floatToRemember {
     /* WORK HERE */
-    self.floatToRemember = &(floatToRemember);
+    self.floatToRemember = floatToRemember;
 }
 
 - (NSMutableArray *) arrayYouShouldRemember {
@@ -39,7 +39,7 @@
 
 - (CGFloat) floatYouShouldRemember {
     /* WORK HERE */
-    return *(self.floatToRemember);
+    return self.floatToRemember;
 }
 
 @end
