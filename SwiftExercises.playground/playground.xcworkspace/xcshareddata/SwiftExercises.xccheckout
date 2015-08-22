@@ -7,18 +7,18 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>81C87FE7-9834-4441-A279-7BB44C6D8D6F</string>
 	<key>IDESourceControlProjectName</key>
-	<string>SwiftExercises</string>
+	<string>playground</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>5450119CCA2DD394E9078F73A3071326A1F877FC</key>
 		<string>github.com:KeivonMH/ios-exercises.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SwiftExercises.playground</string>
+	<string>SwiftExercises.playground/playground.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5450119CCA2DD394E9078F73A3071326A1F877FC</key>
-		<string>..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:KeivonMH/ios-exercises.git</string>
